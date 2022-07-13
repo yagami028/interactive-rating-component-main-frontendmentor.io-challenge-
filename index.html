@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <main class="container">
+    <div class="rating-card" id="rating-quiz-card">
+      <div class="rating-card__img-container">
+        <img src="./images/icon-star.svg" alt="icon-star">
+      </div>
+      <h2 class="rating-card__title">
+        How did we do?
+      </h2>
+      <p class="rating-card__text">
+        Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+        offering!
+      </p>
+      <ul class="rating-card__marks-list">
+        <li class="rating-card__mark-item">
+          <button class="rating-card__mark-btn">1</button>
+        </li>
+        <li class="rating-card__mark-item">
+          <button class="rating-card__mark-btn">2</button>
+        </li>
+        <li class="rating-card__mark-item">
+          <button class="rating-card__mark-btn">3</button>
+        </li>
+        <li class="rating-card__mark-item">
+          <button class="rating-card__mark-btn">4</button>
+        </li>
+        <li class="rating-card__mark-item">
+          <button class="rating-card__mark-btn">5</button>
+        </li>
+      </ul>
+      <button class="rating-card__btn-submit" id="submit-btn" disabled>Submit</button>
+    </div>
+
+    <div class="rating-res-nodisplay rating-res-card" id="rating-res-card">
+      <div class="rating-res__img-container">
+        <img src="./images/illustration-thank-you.svg" alt="illustration-thank-you">
+      </div>
+      <div class="rating-res-card__text-container">
+        <p class="rating-res-card__show">
+          You selected&nbsp;<span id="mark-value"></span>&nbsp;out of 5
+        </p>
+      </div>
+      <h3 class="rating-res-card__title">Thank you!</h3>
+      <p class="rating-res-card__text">
+        We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!
+      </p>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/yagami028" target="_blank">Egor Glebov</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>

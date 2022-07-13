@@ -1,0 +1,209 @@
+:root {
+    --clr-primary-1: hsl(25, 97%, 53%);
+    --clr-neutral-1: hsl(0, 0%, 100%);
+    --clr-neutral-2: hsl(217, 12%, 63%);
+    --clr-neutral-3: hsl(216, 12%, 54%);
+    --clr-neutral-4: hsl(213, 19%, 18%);
+    --clr-neutral-5: hsl(216, 12%, 8%);
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    
+    font-size: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--clr-neutral-5);
+}
+
+.rating-card {
+    max-width: 412px;
+    padding: 30px;
+    background: linear-gradient(#222933, #1a1f25);
+    border-radius: 25px;
+}
+
+.rating-card__img-container {
+    width: 50px;
+    height: 50px;
+    background: var(--clr-neutral-4);
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.rating-card__title {
+    margin-bottom: 20px;
+    color: var(--clr-neutral-1);
+    font-size: 26px;
+}
+
+.rating-card__text {
+    color: var(--clr-neutral-2);
+    margin-bottom: 25px;
+    line-height: 1.45;
+}
+
+.rating-card__marks-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+.rating-card__mark-btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: var(--clr-neutral-4);
+    color: var(--clr-neutral-2);
+    cursor: pointer;
+}
+
+.rating-card__mark-btn:hover {
+    background: var(--clr-primary-1);
+    color: var(--clr-neutral-1);
+    transition: .7s;
+}
+
+.rating-card__btn-active {
+    color: var(--clr-neutral-1);
+    background: var(--clr-neutral-3);
+}
+
+.rating-card__btn-submit {
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 0;
+    text-transform: uppercase;
+    background-color: var(--clr-primary-1);
+    color: var(--clr-neutral-1);
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 1s;
+    transition: color 1s;
+}
+
+.rating-card__btn-submit:hover {
+    background: var(--clr-neutral-1);
+    color: var(--clr-primary-1);
+    transition: .7s;
+}
+
+.attribution {
+    background: var(--clr-neutral-5);
+    color: var(--clr-neutral-1);
+}
+
+/* quiz result */
+.rating-res-nodisplay {
+    display: none;
+}
+
+.rating-res-card {
+    max-width: 412px;
+    padding: 40px 35px 50px;
+    background: linear-gradient(#222933, #1a1f25);
+    border-radius: 25px;
+}
+
+.rating-res__img-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.rating-res-card__text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.rating-res-card__show {
+    display: flex;
+    padding: 6px 15px;
+    background: var(--clr-neutral-4);
+    border-radius: 25px;
+    color: var(--clr-primary-1);
+    text-align: center;
+}
+
+.rating-res-card__title {
+    color: var(--clr-neutral-1);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22.5px;
+}
+
+.rating-res-card__text {
+    color: var(--clr-neutral-3);
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media (max-width: 375px) {
+    .rating-card {
+        max-width: 326px;
+        padding: 20px 15px 30px;
+    }
+
+    .rating-card__img-container {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 20px;
+    }
+
+    .rating-card__text {
+        line-height: 1.4;
+    }
+
+    .rating-card__mark-btn {
+        width: 40px;
+        height: 40px;
+    }
+
+    .rating-card__marks-list {
+        margin-bottom: 20px;
+    }
+
+    /* quiz result */
+    .rating-res-card {
+        max-width: 326px;
+        padding: 30px 23px 40px;
+    }
+
+    .rating-res__img-container {
+        margin-bottom: 20px;
+    }
+    
+    .rating-res-card__text-container {
+        margin-bottom: 25px;
+    }
+
+    .rating-res-card__title {
+        margin-bottom: 20px;
+    }
+}
