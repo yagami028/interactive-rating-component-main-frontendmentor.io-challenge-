@@ -24,6 +24,11 @@ ul {
     list-style: none;
 }
 
+a {
+    color: var(--clr-primary-1);
+    cursor: pointer;
+}
+
 .container {
     max-width: 1440px;
     height: 100vh;
